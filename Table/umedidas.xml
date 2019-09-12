@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Document   : umedidas.xml
+    Author     : Jonathan Bolo
+    Description:
+        Structure for the umedidas table.
+-->
+<table>
+    <column>
+        <name>codumedida</name>
+        <type>character varying(20)</type>
+        <null>NO</null>
+    </column>
+    <column>
+        <name>umedidanac</name>
+        <type>character varying(20)</type>
+        <null>NO</null>
+    </column>
+    <column>
+        <name>descripcion</name>
+        <type>character varying(100)</type>
+        <null>NO</null>
+    </column>
+    <constraint>
+        <name>codumedida_pkey</name>
+        <type>PRIMARY KEY (codumedida)</type>
+    </constraint>
+</table>

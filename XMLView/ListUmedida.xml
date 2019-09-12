@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view>
+    <columns>
+        <column name="code" order="100">
+            <widget type="text" fieldname="codumedida" icon="fas fa-hashtag" readonly="dinamic" />
+        </column>
+        <column name="codnacional" order="110">
+            <widget type="text" fieldname="umedidanac" />
+        </column>
+        <column name="description" order="120">
+            <widget type="text" fieldname="descripcion" />
+        </column>
+    </columns>
+</view>

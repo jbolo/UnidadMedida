@@ -1,4 +1,3 @@
-# UnidadMedida
 <h1>Unidad de Medida</h1>
 
 <p>Plugin para FacturaScripts que incorpora:</p>

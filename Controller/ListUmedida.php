@@ -15,7 +15,7 @@ class ListUmedida extends ListController
     public function getPageData()
     {
         $pageData = parent::getPageData();
-        $pageData['menu'] = 'accounting';|
+        $pageData['menu'] = 'accounting';
         $pageData['title'] = 'Unidad de Medida';
         $pageData['icon'] = 'fas fa-ruler';
 

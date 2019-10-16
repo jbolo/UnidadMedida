@@ -11,11 +11,11 @@
         <type>character varying(20)</type>
         <null>NO</null>
     </column>
-    <column>
+    <!--column>
         <name>umedidanac</name>
         <type>character varying(20)</type>
         <null>NO</null>
-    </column>
+    </column-->
     <column>
         <name>descripcion</name>
         <type>character varying(100)</type>

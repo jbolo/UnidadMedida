@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    Document   : lineasfacturascli.xml
+    Document   : lineaspedidoscli.xml
     Author     : Carlos Garcia Gomez
     Description:
-        Structure for the lineasfacturascli table.
+        Structure for the lineaspedidoscli table.
 -->
 <table>
     <column>
@@ -11,19 +11,19 @@
         <type>character varying(20)</type>
     </column>
     <constraint>
-        <name>ca_linea_facturascli2</name>
-        <type>FOREIGN KEY (idfactura) REFERENCES facturascli (idfactura) ON DELETE CASCADE ON UPDATE CASCADE</type>
-    </constraint>
-    <constraint>
-        <name>ca_lineasfacturascli_impuestos</name>
+        <name>ca_lineaspedidoscli_impuestos</name>
         <type>FOREIGN KEY (codimpuesto) REFERENCES impuestos (codimpuesto) ON DELETE RESTRICT ON UPDATE CASCADE</type>
     </constraint>
     <constraint>
-        <name>ca_lineasfacturascli_productos</name>
+        <name>ca_lineaspedidoscli_productos</name>
         <type>FOREIGN KEY (idproducto) REFERENCES productos (idproducto) ON DELETE SET NULL ON UPDATE CASCADE</type>
     </constraint>
     <constraint>
-        <name>ca_lineasfacturascli_umedidas</name>
+        <name>ca_lineaspedidoscli_pedidoscli</name>
+        <type>FOREIGN KEY (idpedido) REFERENCES pedidoscli (idpedido) ON DELETE CASCADE ON UPDATE CASCADE</type>
+    </constraint>
+    <constraint>
+        <name>ca_lineaspedidoscli_umedidas</name>
         <type>FOREIGN KEY (codumedida) REFERENCES umedidas (codumedida) ON DELETE SET NULL ON UPDATE CASCADE</type>
     </constraint>
 </table>

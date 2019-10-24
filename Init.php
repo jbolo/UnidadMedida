@@ -15,7 +15,9 @@ class Init extends InitClass
     {
         $tables = $this->toolBox()->cache()->get('fs_checked_tables');
 
-        $tables_unchecked = array('productos', 'lineasfacturascli');
+        $tables_unchecked = array('productos', 
+                                  'lineaspresupuestosprov','lineaspedidosprov','lineasalbaranesprov','lineasfacturasprov',
+                                  'lineaspresupuestoscli' ,'lineaspedidoscli' ,'lineasalbaranescli' ,'lineasfacturascli' );
 
         $tables_checked = array_diff($tables,$tables_unchecked);
 

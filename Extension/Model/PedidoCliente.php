@@ -16,37 +16,14 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-namespace FacturaScripts\Plugins\UnidadMedida\Controller;
-
-use FacturaScripts\Core\Lib\ExtendedController\ListController;
+namespace FacturaScripts\Plugins\UnidadMedida\Extension\Model;
 
 /**
- * Controller to List Umedida.
+ * Description of PedidoCliente
  *
- * @author Jonathan Bolo        <jbolo.des@gmail.com>
- *
+ * @author Carlos García Gómez <carlos@facturascripts.com>
  */
-class ListUmedida extends ListController
+class PedidoCliente extends BusinessDocument
 {
-
-    public function getPageData()
-    {
-        $pageData = parent::getPageData();
-        $pageData['menu'] = 'warehouse';
-        $pageData['title'] = 'Unidad de Medida';
-        $pageData['icon'] = 'fas fa-ruler';
-
-        return $pageData;
-    }
-
-    protected function createViews()
-    {
-        $this->createViewProtected();
-    }
-
-    protected function createViewProtected($viewName = 'ListUmedida')
-    {
-        $this->addView($viewName, 'Umedida');
-        $this->addOrderBy($viewName, ['codumedida'], 'code');
-    }
+    //put your code here
 }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Document   : lineaspresupuestosprov.xml
+    Author     : Carlos Garcia Gomez
+    Description:
+        Structure for the lineaspresupuestosprov table.
+-->
+<table>
+    <column>
+        <name>codumedida</name>
+        <type>character varying(20)</type>
+    </column>
+    <constraint>
+        <name>ca_lineaspresupuestosprov_umedidas</name>
+        <type>FOREIGN KEY (codumedida) REFERENCES umedidas (codumedida) ON DELETE SET NULL ON UPDATE CASCADE</type>
+    </constraint>
+</table>
